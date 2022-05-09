@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel .carousel-item {
+  height: 70vh;
+}
+
+.carousel-item img {
+  position: absolute;
+  object-fit: contain;
+  top: 0;
+  left: 0;
+  min-height: 100px;
+}
+
+.nav h1 {
+  width: 40vw;
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  text-transform: uppercase;
+}
+
+.center {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.btn {
+  background-image: linear-gradient(to right, #fd287c, #ff7654);
+  border-radius: 50px;
+  width: 50%;
+  height: 60px;
+  font-family: helvetica;
+  font-size: 200%;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+    .btn{
+        font-size: 100%;
+    }
+}
+
+.btn:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.995);
+  outline: none;
+}
+
+a {
+  color: black;
+}
+
+button.demo {
+  background-color: hsl(200, 80%, 40%);
+  border: 1px solid hsl(200, 80%, 30%);
+}
+
+button.demo {
+  margin: 0 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0 60px 12px -18px hsla(0, 0%, 0%, 0.1),
+    0 60px 20px -12px hsla(0, 0%, 0%, 0.1);
+  animation: float 1s infinite ease-in-out alternate;
+}
+
+@keyframes float {
+  100% {
+    transform: translateY(20px);
+    box-shadow: 0 40px 10px -18px hsla(0, 0%, 0%, 0.2),
+      0 40px 16px -12px hsla(0, 0%, 0%, 0.2);
+  }
+}
+
+.button_holder {
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+}
+
+.fa{
+    font-size: 250%;
+}
